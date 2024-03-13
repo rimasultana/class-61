@@ -1,13 +1,7 @@
-const sentence = "is a Rima good gril. he is very honest.Rima fathers name Golam Mostafa. rima mothers name shemsunnaher."
+const x = "Learn with sumit. he is very honest. sumit is best of the world developer.";
 
-const matches = sentence.match(/Rimas/gi);
+const matches = x.match(/sumit/gi);
 
-const text = matches? matches.length: 0;
+const text = matches.length;
 
 console.log(text);
-
-let position = sentence.search(/Rimas/i);
-
-position = position >= 0? position :"Not found!";
-
-console.log(position);
