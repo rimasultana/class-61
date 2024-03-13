@@ -26,15 +26,38 @@
 
 // console.log(linearSearch(['a', 'b', 'c', 'd', 'c'],'c'));
 
-function longestString (names) {
-    let longestWord = '';
+// function longestString (names) {
+//     let longestWord = '';
 
-for (name of names) {
-    if (name.length >longestWord.length) {
-        longestWord = name;
+// for (name of names) {
+//     if (name.length >longestWord.length) {
+//         longestWord = name;
+//     }
+// }
+// return [longestWord, names.indexOf(longestWord)];
+// }
+
+// console.log(longestString(['sumi saha', 'Learn with sumit', 'akash']));
+
+
+function fizzBuzz (number) {
+    for (let i = 1; i <=number; i++) {
+        if (i % ===0) {
+            if( i% 15 === 0) {
+                console.log(`${i} is fizzBuzz`);
+            } else(
+                i % 3 === 0
+            ) {
+                console.log(`${i} is fizz`);
+            } else(
+                i % 5 === 0
+            ) {
+                console.log(`${i} is Buzz`);
+            } else{
+                console.log(i);
+            }
+        }
     }
 }
-return [longestWord, names.indexOf(longestWord)];
-}
 
-console.log(longestString(['sumi saha', 'Learn with sumit', 'akash']));
+fizzBuzz(100);
