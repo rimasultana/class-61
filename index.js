@@ -7,7 +7,10 @@ const text = matches? matches.length: 0;
 console.log(text);
 
 
-const position = x.search(/sumit/);
+let position = x.search(/sumits/i);
+
+position = position>= position:"not found";
+
 
 console.log(position);
 
