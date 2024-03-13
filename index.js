@@ -1,16 +1,28 @@
-const x = "Learn with sumit. he is very honest. sumit is best of the world developer.";
+// const x = "Learn with sumit. he is very honest. sumit is best of the world developer.";
 
-const matches = x.match(/sumits/gi);
+// const matches = x.match(/sumits/gi);
 
-const text = matches? matches.length: 0;
+// const text = matches? matches.length: 0;
 
-console.log(text);
-
-
-let position = x.search(/sumits/i);
-
-position = position>= position:"not found";
+// console.log(text);
 
 
-console.log(position);
+// let position = x.search(/sumits/i);
+
+// position = position>= position:"not found";
+
+
+// console.log(position);
+
+function linearSearch (arr, val) {
+    const length = arr.length;
+for (let i = 0; i < length; i++) {
+    if (arr[i] === val) {
+        return i;
+    }
+}
+return "not found";
+}
+
+console.log(linearSearch(['a', 'b', 'c', 'd', 'c'], 'c'));
 
