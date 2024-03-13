@@ -14,15 +14,27 @@
 
 // console.log(position);
 
-function linearSearch (arr, val) {
-    const length = arr.length;
-for (let i = 0; i < length; i++) {
-    if (arr[i] === val) {
-        return i;
+// function linearSearch (arr, val) {
+//     const length = arr.length;
+// for (let i = 0; i < length; i++) {
+//     if (arr[i] === val) {
+//         return i;
+//     }
+// }
+// return "not found";
+// }
+
+// console.log(linearSearch(['a', 'b', 'c', 'd', 'c'],'c'));
+
+function longestString (names) {
+    let longestWord = '';
+
+for (name of names) {
+    if (name.length >longestWord.length) {
+        longestWord = name;
     }
 }
-return "not found";
+return [longestWord, names.indexOf(longestWord)];
 }
 
-console.log(linearSearch(['a', 'b', 'c', 'd', 'c'], 'c'));
-
+console.log(longestString(['sumi saha', 'Learn with sumit', 'akash']));
