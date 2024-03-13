@@ -6,6 +6,8 @@ const text = matches? matches.length: 0;
 
 console.log(text);
 
-const position = sentence.search(/Rima/i);
+let position = sentence.search(/Rimas/i);
+
+position = position >= 0? position :"Not found!";
 
 console.log(position);
