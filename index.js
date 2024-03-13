@@ -6,3 +6,8 @@ const text = matches? matches.length: 0;
 
 console.log(text);
 
+
+const position = x.search(/sumit/);
+
+console.log(position);
+
