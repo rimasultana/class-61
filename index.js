@@ -2,3 +2,6 @@ const sentence = "Rima is a good gril. he is very honest.Rima fathers name Golam
 
 const matches = sentence.match(/Rima/gi);
 
+const text = matches.length;
+
+console.log(text);
