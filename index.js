@@ -1,3 +1,4 @@
-let x = 5;
+const sentence = "Rima is a good gril. he is very honest.Rima fathers name Golam Mostafa. rima mothers name shemsunnaher."
 
-console.log(x);
+const matches = sentence.match(/Rima/gi);
+
